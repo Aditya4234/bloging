@@ -1,0 +1,122 @@
+.author-profile {
+    padding: 2rem 0 4rem;
+}
+
+.author-header {
+    display: flex;
+    gap: 3rem;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.author-avatar-section {
+    flex-shrink: 0;
+}
+
+.author-avatar-xl {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.author-info-section {
+    flex: 1;
+}
+
+.author-info-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.author-bio {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.author-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.author-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all var(--transition-base);
+}
+
+.stat-box:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.author-posts {
+    margin-top: 3rem;
+}
+
+.author-posts h2 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .author-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .author-info-section h1 {
+        font-size: 2rem;
+    }
+
+    .author-meta {
+        justify-content: center;
+    }
+
+    .author-stats {
+        grid-template-columns: 1fr;
+    }
+}
