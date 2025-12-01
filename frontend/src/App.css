@@ -30,7 +30,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-  }
+
+/* (Optional) If you wanted a spin animation, use this: */
+@keyframes spin {
   to {
     transform: rotate(360deg);
   }
