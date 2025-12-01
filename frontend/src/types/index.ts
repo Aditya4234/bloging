@@ -18,3 +18,8 @@ export interface UpdatePostData {
   content: string;
   author: string;
 }
+
+export interface HealthCheckResponse {
+  status: string;
+  message: string;
+}
